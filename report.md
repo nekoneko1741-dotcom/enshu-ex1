@@ -1,26 +1,21 @@
 # 情報科学演習IV テーマ2 演習1ログ（B231787 濵田大輔）
 
+---
+
+## 演習1-1（基本操作：add/commit/push）
+- 初回コミット：notes.txt / report.md を作成して commit し、GitHubへ push
 
 ---
-## 演習1-1（基本操作：add/commit/push）
-### git status
-```
-On branch main
-Your branch is up to date with 'origin/main'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   report.md
-
-no changes added to commit (use "git add" and/or "git commit -a")
+## 演習1-2（差分確認：git diff / git diff --cached）
+- notes.txt に line A / line B を追記して差分を確認
 ```
-### git log --oneline --decorate -5
-```
-b33f8f4 (HEAD -> main, origin/main) exercise 1-1: add initial files
-```
-### git remote -v
-```
-origin	https://github.com/nekoneko1741-dotcom/enshu-ex1.git (fetch)
-origin	https://github.com/nekoneko1741-dotcom/enshu-ex1.git (push)
+diff --git a/notes.txt b/notes.txt
+index 780b13c..ff01a01 100644
+--- a/notes.txt
++++ b/notes.txt
+@@ -1 +1,3 @@
+ enshu 1-1 start
++line A
++line B
 ```
